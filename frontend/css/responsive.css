@@ -60,7 +60,7 @@
 
 @media (max-width: 768px) {
   .shell {
-    width: min(100% - 24px, 1180px);
+    width: calc(100% - 24px);
   }
 
   .shell--header {
@@ -87,11 +87,16 @@
 
   .hero-slide {
     min-height: auto;
+    height: auto;
     padding: 26px;
   }
 
   .hero-slide__visual {
     min-height: 260px;
+  }
+
+  .hero-slider {
+    min-height: 0;
   }
 
   .results-toolbar,
