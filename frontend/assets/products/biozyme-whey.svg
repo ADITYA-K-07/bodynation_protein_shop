@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Biozyme whey placeholder</title>
+  <rect width="600" height="600" rx="44" fill="#FFF4EC"/>
+  <rect x="170" y="84" width="260" height="432" rx="38" fill="#111111"/>
+  <rect x="220" y="146" width="160" height="90" rx="20" fill="#FF6600"/>
+  <text x="300" y="203" text-anchor="middle" fill="#111111" font-size="34" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">BIOZYME</text>
+  <text x="300" y="328" text-anchor="middle" fill="#FF6600" font-size="52" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">WHEY</text>
+  <text x="300" y="396" text-anchor="middle" fill="#FFFFFF" font-size="24" font-family="Arial Narrow, Arial, sans-serif">Replace with final product image</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Casein placeholder</title>
+  <rect width="600" height="600" rx="44" fill="#F1F1F1"/>
+  <rect x="170" y="84" width="260" height="432" rx="38" fill="#111111"/>
+  <circle cx="300" cy="194" r="72" fill="#FFFFFF"/>
+  <text x="300" y="212" text-anchor="middle" fill="#111111" font-size="34" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">CN</text>
+  <text x="300" y="346" text-anchor="middle" fill="#FFFFFF" font-size="52" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">CASEIN</text>
+  <text x="300" y="400" text-anchor="middle" fill="#FFFFFF" font-size="24" font-family="Arial Narrow, Arial, sans-serif">Night fuel placeholder</text>
+</svg>

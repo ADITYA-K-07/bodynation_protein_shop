@@ -1,0 +1,111 @@
+@media (max-width: 1200px) {
+  .shell--header {
+    grid-template-columns: 180px minmax(0, 1fr) auto;
+  }
+
+  .site-search {
+    grid-column: span 2;
+    order: 4;
+  }
+
+  .product-grid,
+  .review-grid,
+  .goal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trust-grid,
+  .category-grid,
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  .mobile-nav-toggle {
+    display: inline-flex;
+  }
+
+  .primary-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 0 16px 18px;
+  }
+
+  .primary-nav.is-open {
+    display: flex;
+  }
+
+  .site-search {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-slide,
+  .product-page-layout,
+  .product-detail-layout,
+  .authentic-grid,
+  .cart-layout,
+  .checkout-grid,
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .shell {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .shell--header {
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .brand-lockup img {
+    width: 138px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .product-grid,
+  .review-grid,
+  .goal-grid,
+  .trust-grid,
+  .category-grid,
+  .footer-grid,
+  .tab-panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-slide {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .hero-slide__visual {
+    min-height: 260px;
+  }
+
+  .results-toolbar,
+  .footer-bottom,
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item__controls {
+    justify-items: start;
+  }
+}

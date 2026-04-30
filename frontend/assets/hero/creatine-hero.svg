@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title">
+  <title id="title">Creatine hero placeholder</title>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1A3FBB"/>
+      <stop offset="100%" stop-color="#5C7EF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" rx="36" fill="url(#bg)"/>
+  <rect x="120" y="120" width="250" height="360" rx="28" fill="#FFFFFF"/>
+  <rect x="178" y="180" width="134" height="220" rx="20" fill="#1A3FBB"/>
+  <text x="245" y="304" text-anchor="middle" fill="#FFFFFF" font-size="38" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">CR</text>
+  <text x="460" y="220" fill="#FFFFFF" font-size="42" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">STRENGTH HERO SLOT</text>
+  <text x="460" y="302" fill="#FFFFFF" font-size="84" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">CREATINE</text>
+  <text x="460" y="370" fill="#FFFFFF" font-size="34" font-family="Arial Narrow, Arial, sans-serif">Add final packshot in this placeholder area.</text>
+</svg>

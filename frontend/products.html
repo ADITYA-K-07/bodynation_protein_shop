@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Body Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div data-site-header></div>
+    <main class="shell">
+      <section class="section-intro">
+        <p class="eyebrow">Full catalog</p>
+        <h1>All Products</h1>
+        <p class="muted">Filter by category, brand, goal, and price while the product grid stays ready for backend hydration.</p>
+      </section>
+
+      <section class="product-page-layout">
+        <aside class="filters-panel">
+          <h2>Filters</h2>
+          <form class="filter-stack" data-filter-form>
+            <label class="field">
+              <span>Category</span>
+              <select name="category" data-filter-sync>
+                <option value="">All categories</option>
+                <option value="whey-protein">Whey Protein</option>
+                <option value="creatine">Creatine</option>
+                <option value="mass-gainers">Mass Gainers</option>
+                <option value="vitamins">Vitamins</option>
+                <option value="pre-workout">Pre-Workout</option>
+                <option value="amino-acids">Amino Acids</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Brand</span>
+              <select name="brand" data-filter-sync>
+                <option value="">All brands</option>
+                <option value="MuscleBlaze">MuscleBlaze</option>
+                <option value="Optimum Nutrition">Optimum Nutrition</option>
+                <option value="AS-IT-IS">AS-IT-IS</option>
+                <option value="MuscleTech">MuscleTech</option>
+                <option value="GNC">GNC</option>
+                <option value="MyProtein">MyProtein</option>
+                <option value="Dymatize">Dymatize</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Goal</span>
+              <select name="goal" data-filter-sync>
+                <option value="">All goals</option>
+                <option value="muscle-gain">Muscle Gain</option>
+                <option value="weight-loss">Weight Loss</option>
+                <option value="endurance">Endurance and Stamina</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Search</span>
+              <input name="search" type="search" placeholder="Brand or product" data-filter-sync>
+            </label>
+            <label class="field">
+              <span>Price Range</span>
+              <input name="maxPrice" type="range" min="500" max="9000" step="100" value="9000" data-filter-sync>
+              <small data-price-output>Up to Rs. 9,000</small>
+            </label>
+            <label class="field">
+              <span>Sort By</span>
+              <select name="sort" data-filter-sync>
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Rating</option>
+                <option value="discount-desc">Discount</option>
+              </select>
+            </label>
+          </form>
+        </aside>
+
+        <section>
+          <div data-products-status></div>
+          <div class="results-toolbar">
+            <strong data-results-count>0 products</strong>
+            <p class="muted">Sidebar filters mirror the planned category, brand, price, goal, and sort setup.</p>
+          </div>
+          <div class="product-grid" data-products-grid></div>
+        </section>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/products.js"></script>
+    <script type="module" src="js/wishlist.js"></script>
+  </body>
+</html>
