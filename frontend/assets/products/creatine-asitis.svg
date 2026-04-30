@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title">
-  <title id="title">Creatine placeholder</title>
-  <rect width="600" height="600" rx="44" fill="#EEF3FF"/>
-  <rect x="182" y="108" width="236" height="400" rx="40" fill="#1A3FBB"/>
-  <circle cx="300" cy="202" r="62" fill="#FFFFFF"/>
-  <text x="300" y="218" text-anchor="middle" fill="#1A3FBB" font-size="42" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">CR</text>
-  <text x="300" y="350" text-anchor="middle" fill="#FFFFFF" font-size="46" font-family="Arial Narrow, Arial, sans-serif" font-weight="700">CREATINE</text>
-  <text x="300" y="400" text-anchor="middle" fill="#FFFFFF" font-size="22" font-family="Arial Narrow, Arial, sans-serif">Micronized placeholder art</text>
-</svg>
