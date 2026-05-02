@@ -164,7 +164,7 @@ button {
 }
 
 .site-header {
-  position: sticky;
+  position: flex;
   top: 0;
   z-index: 20;
   background: rgba(47, 79, 162, 0.96);
