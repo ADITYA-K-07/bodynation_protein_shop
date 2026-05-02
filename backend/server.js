@@ -1,59 +1,9 @@
-import cors from 'cors';
-import dotenv from 'dotenv';
-import express from 'express';
-import mongoose from 'mongoose';
-
-import adminRouter from './routes/admin.js';
-import ordersRouter from './routes/orders.js';
-import paymentRouter from './routes/payment.js';
-import productsRouter from './routes/products.js';
-import { seedProductsIfEmpty } from './utils/seedProducts.js';
-
-dotenv.config();
-
-const app = express();
-const allowedOrigins = new Set(['http://localhost:5173', 'http://localhost:5174']);
-
-app.use(
-  cors({
-    origin(origin, callback) {
-      if (!origin || allowedOrigins.has(origin)) {
-        callback(null, true);
-        return;
-      }
-
-      callback(new Error('Not allowed by CORS'));
-    },
-  }),
-);
-
-app.use(express.json({ limit: '2mb' }));
-
-app.get('/health', (req, res) => {
-  res.json({ ok: true });
-});
-
-app.use('/api/products', productsRouter);
-app.use('/api/orders', ordersRouter);
-app.use('/api/payment', paymentRouter);
-app.use('/api/admin', adminRouter);
-
-app.use((err, req, res, next) => {
-  if (err?.message === 'Not allowed by CORS') {
-    res.status(403).json({ error: 'Origin not allowed' });
-    return;
-  }
-
-  console.error(err);
-  res.status(500).json({ error: 'Internal server error' });
-});
+import app, { prepareApp } from './app.js';
 
 async function startServer() {
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log('MongoDB connected');
-
-    await seedProductsIfEmpty();
+    await prepareApp();
+    console.log('Body Nation backend ready');
 
     const port = Number(process.env.PORT) || 4000;
     app.listen(port, () => {
@@ -65,4 +15,11 @@ async function startServer() {
   }
 }
 
-startServer();
+if (process.env.VERCEL !== '1') {
+  startServer();
+}
+
+export default async function handler(req, res) {
+  await prepareApp();
+  return app(req, res);
+}
